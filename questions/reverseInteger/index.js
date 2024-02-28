@@ -8,7 +8,8 @@
  */
 
 const reverseInteger = (int) => {
-
+    const reversed = parseInt(int.toString().split('').reverse().join(''));
+    return (int < 0) ? reversed * -1 : reversed;
 };
 
 module.exports = reverseInteger;
