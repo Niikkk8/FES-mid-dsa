@@ -10,7 +10,6 @@
  */
 
 const anagrams = (strA, strB) => {
-  
 }
 
 module.exports = anagrams;
