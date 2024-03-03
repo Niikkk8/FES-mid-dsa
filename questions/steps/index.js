@@ -18,7 +18,10 @@
  */
 
 const steps = (n) => {
-
+    for (let i = 0; i < n; i++) {
+        const step = '#'.repeat(i + 1) + ' '.repeat(n - i - 1);
+        console.log(step);
+    }
 };
 
 module.exports = steps;

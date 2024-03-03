@@ -10,6 +10,27 @@
  */
 
 const anagrams = (strA, strB) => {
+    //MAKE THIS REUSABLE BY CREATING FUNCTIONS
+    const charMapA = {};
+    const charMapB = {};
+    for (char of strA.toLowerCase() /*.replaceAll(" ", "")*/) {
+        char !== ' ' && (charMapA[char] = charMapA[char] + 1 || 1);
+    }
+    for (char of strB.toLowerCase()) {
+        char !== ' ' && (charMapB[char] = charMapB[char] + 1 || 1);
+    }
+    if (Object.keys(charMapA).length === Object.keys(charMapB).length) {
+        for (const [charA, countA] of Object.entries(charMapA)) {
+            if (charMapB[charA] !== countA) {
+                return false;
+            }
+        }
+        return true;
+    } else {
+        return false;
+    }
+
+    // OR SORT BOTH ARRAYS AFTER REMOVING SPACES AND CONVERTING THEM TO LOWERCASE AND THEN COMAPRE
 }
 
 module.exports = anagrams;

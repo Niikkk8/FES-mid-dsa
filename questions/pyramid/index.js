@@ -18,7 +18,11 @@
  */
 
 const pyramid = (n) => {
-  
+    for (let i = 0; i < n; i++) {
+        const spaces = ' '.repeat(n - i - 1);
+        const hashes = '#'.repeat(2 * i + 1);
+        console.log(`${spaces}${hashes}${spaces}`);
+    }
 };
 
 module.exports = pyramid;
