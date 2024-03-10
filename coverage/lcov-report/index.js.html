@@ -25,28 +25,28 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>11/11</span>
+                <span class='fraction'>21/21</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>10/10</span>
+                <span class='fraction'>19/19</span>
             </div>
         
             
@@ -107,22 +107,7 @@
 <a name='L42'></a><a href='#L42'>42</a>
 <a name='L43'></a><a href='#L43'>43</a>
 <a name='L44'></a><a href='#L44'>44</a>
-<a name='L45'></a><a href='#L45'>45</a>
-<a name='L46'></a><a href='#L46'>46</a>
-<a name='L47'></a><a href='#L47'>47</a>
-<a name='L48'></a><a href='#L48'>48</a>
-<a name='L49'></a><a href='#L49'>49</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<a name='L45'></a><a href='#L45'>45</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -136,77 +121,80 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">103x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">36x</span>
+<span class="cline-any cline-yes">36x</span>
+<span class="cline-any cline-yes">36x</span>
+<span class="cline-any cline-yes">175x</span>
+<span class="cline-any cline-yes">175x</span>
+<span class="cline-any cline-yes">132x</span>
+<span class="cline-any cline-yes">43x</span>
+<span class="cline-any cline-yes">25x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">23x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">23x</span>
-<span class="cline-any cline-yes">23x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/** Maximum Subarray
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/** Three Sum
  *
- * Given an integer array `nums`, find the subarray which has the
- * largest sum and return the sum.
+ * Given an array of integers 'nums', return an array of all the
+ * three numbers that add up to 0.
+ *
+ * Note: There cannot be any duplicate triplets in the results array.
  *
  * @examples
- * maxSubArray([5, 4, -1, 7, 8]) = 23
- * maxSubArray([-2, 1, -3, 4, -1, 2, -5, 0]) = 5
- * maxSubArray([2, 4, 3, -1, -4, -9]) = 9
+ * threeSum([-1, 0, 1, 2, -1, -4]) = [[-1, -1, 2], [-1, 0, 1]]
+ * threeSum([-2, -2, 0, 0, 1, 1, 2, 2]) = [[ -2, 0, 2 ], [ -2, 1, 1 ]]
+ * threeSum([0, 0, 0, 0]) = [[0, 0, 0]]
  */
 &nbsp;
-const maxSubArray = (nums) =&gt; {
-  // O(n^3)
-  // let maxSum = nums[0]
-  // for (let i = 0; i &lt; nums.length; i++) {
-  //   for (let j = i + 1; j &lt;= nums.length; j++) {
-  //     const subArray = nums.slice(i, j);
-  //     const sum = subArray.reduce((acc, curr) =&gt; acc + curr);
-  //     maxSum = Math.max(maxSum, sum)
-  //   }
-  // }
-  // return maxSum
+function threeSum(nums) {
+    nums.sort((a, b) =&gt; a - b);
+    const results = [];
 &nbsp;
-  // O(n^2)
-  // let maxSum = 0;
-  // for (let i = 0; i &lt; nums.length; i++) {
-  //   let sum = 0;
-  //   for (let j = i; j &lt; nums.length; j++) {
-  //     sum += nums[j];
-  //     maxSum = Math.max(maxSum, sum)
-  //   }
-  // }
-  // return maxSum;
-&nbsp;
-  let maxSum = nums[0];
-  let sum = 0;
-  for (let i = 0; i &lt; nums.length; i++) {
-    if (sum &lt; 0) {
-      sum = 0;
+    for (let i = 0; i &lt; nums.length - 2; i++) {
+        if (nums[i] === nums[i - 1]) {
+            continue
+        }
+        let leftPointer = i + 1;
+        let rightPointer = nums.length - 1;
+        while (leftPointer &lt; rightPointer) {
+            const sum = nums[i] + nums[leftPointer] + nums[rightPointer];
+            if (sum &gt; 0) {
+                rightPointer--;
+            } else if (sum &lt; 0) {
+                leftPointer++;
+            } else {
+                results.push([nums[i], nums[leftPointer], nums[rightPointer]])
+                leftPointer++;
+                while (nums[leftPointer] === nums[leftPointer - 1] &amp;&amp; leftPointer &lt; rightPointer) {
+                    leftPointer++;
+                }
+            }
+        }
     }
-    sum += nums[i];
-    maxSum = Math.max(maxSum, sum)
-  }
-  return maxSum;
-};
+&nbsp;
+    return results;
+}
 &nbsp;
 //DO NOT EDIT BELOW THIS LINE
-module.exports = maxSubArray;
+module.exports = threeSum;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -214,7 +202,7 @@ module.exports = maxSubArray;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Sat Mar 09 2024 19:31:54 GMT+0530 (India Standard Time)
+                at Sun Mar 10 2024 17:07:20 GMT+0530 (India Standard Time)
             </div>
         <script src="prettify.js"></script>
         <script>

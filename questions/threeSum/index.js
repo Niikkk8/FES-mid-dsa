@@ -12,7 +12,32 @@
  */
 
 function threeSum(nums) {
-  
+    nums.sort((a, b) => a - b);
+    const results = [];
+
+    for (let i = 0; i < nums.length - 2; i++) {
+        if (nums[i] === nums[i - 1]) {
+            continue
+        }
+        let leftPointer = i + 1;
+        let rightPointer = nums.length - 1;
+        while (leftPointer < rightPointer) {
+            const sum = nums[i] + nums[leftPointer] + nums[rightPointer];
+            if (sum > 0) {
+                rightPointer--;
+            } else if (sum < 0) {
+                leftPointer++;
+            } else {
+                results.push([nums[i], nums[leftPointer], nums[rightPointer]])
+                leftPointer++;
+                while (nums[leftPointer] === nums[leftPointer - 1] && leftPointer < rightPointer) {
+                    leftPointer++;
+                }
+            }
+        }
+    }
+
+    return results;
 }
 
 //DO NOT EDIT BELOW THIS LINE

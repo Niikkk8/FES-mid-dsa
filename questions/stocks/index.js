@@ -11,7 +11,21 @@
  */
 
 const stocks = (prices) => {
-   
+    // HARD TO UNDERSTAND
+    let leftPointer = 0;
+    let rightPointer = 1;
+    let maxProfit = 0;
+
+    while (rightPointer < prices.length) {
+        const profit = prices[rightPointer] - prices[leftPointer]
+        if (profit > 0) {
+            maxProfit = Math.max(maxProfit, profit)
+        } else {
+            leftPointer = rightPointer;
+        }
+        rightPointer++;
+    }
+    return maxProfit;
 }
 
 

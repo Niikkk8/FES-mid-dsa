@@ -12,7 +12,20 @@
  */
 
 const twoSortedSum = (nums, target) => {
+    // O(n) and O(1) space
+    let leftPointer = 0;
+    let rightPointer = nums.length - 1;
 
+    while (leftPointer < rightPointer) {
+        const sum = nums[leftPointer] + nums[rightPointer]
+        if (sum > target) {
+            rightPointer--;
+        } else if (sum < target) {
+            leftPointer++;
+        } else {
+            return [leftPointer, rightPointer]
+        }
+    }
 }
 
 module.exports = twoSortedSum;
