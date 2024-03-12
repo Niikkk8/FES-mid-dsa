@@ -10,8 +10,14 @@
  * 
  */
 
- const meetingTimes = (times) => {
-
- };
+const meetingTimes = (times) => {
+    times.sort((a, b) => a[0] - b[0]);
+    for (let i = 0; i < times.length - 1; i++) {
+        if (times[i][1] > times[i + 1][0]) {
+            return false;
+        }
+    }
+    return true;
+};
 
 module.exports = meetingTimes;

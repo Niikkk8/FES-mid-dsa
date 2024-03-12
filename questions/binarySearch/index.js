@@ -13,8 +13,30 @@
  */
 
 const binarySearch = (nums, target) => {
+    // tried on my own, without knowing the proper logic
+    // let middleElement = Math.floor(nums.length / 2)
+    // while () {
+    //     if (target > nums[middleElement]) {
+    //         middleElement++
+    //     } else if (target < nums[middleElement]) {
+    //         middleElement--
+    //     } else {
+    //         return middleElement;
+    //     }
+    // }
 
-
+    let leftPointer = 0;
+    let rightPointer = nums.length - 1;
+    while (leftPointer != rightPointer) {
+        let middleNumber = Math.floor((leftPointer + rightPointer) / 2)
+        if (target > nums[middleNumber]) {
+            leftPointer++
+        } else if (target < nums[middleNumber]) {
+            rightPointer--
+        } else {
+            return middleNumber
+        }
+    }
 }
 
 module.exports = binarySearch;

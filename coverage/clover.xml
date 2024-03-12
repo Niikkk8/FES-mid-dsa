@@ -1,28 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1710070640568" clover="3.2.0">
-  <project timestamp="1710070640569" name="All files">
-    <metrics statements="19" coveredstatements="19" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2" elements="29" coveredelements="29" complexity="0" loc="19" ncloc="19" packages="1" files="1" classes="1"/>
-    <file name="index.js" path="C:\Users\admin\Desktop\FES Advanced Challenges\questions\threeSum\index.js">
-      <metrics statements="19" coveredstatements="19" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
-      <line num="15" count="103" type="stmt"/>
-      <line num="16" count="7" type="stmt"/>
-      <line num="18" count="7" type="stmt"/>
-      <line num="19" count="48" type="cond" truecount="2" falsecount="0"/>
-      <line num="20" count="12" type="stmt"/>
-      <line num="22" count="36" type="stmt"/>
-      <line num="23" count="36" type="stmt"/>
-      <line num="24" count="36" type="stmt"/>
-      <line num="25" count="175" type="stmt"/>
-      <line num="26" count="175" type="cond" truecount="2" falsecount="0"/>
-      <line num="27" count="132" type="stmt"/>
-      <line num="28" count="43" type="cond" truecount="2" falsecount="0"/>
-      <line num="29" count="25" type="stmt"/>
-      <line num="31" count="18" type="stmt"/>
-      <line num="32" count="18" type="stmt"/>
-      <line num="33" count="18" type="cond" truecount="2" falsecount="0"/>
-      <line num="34" count="5" type="stmt"/>
-      <line num="40" count="7" type="stmt"/>
-      <line num="44" count="1" type="stmt"/>
+<coverage generated="1710251977471" clover="3.2.0">
+  <project timestamp="1710251977471" name="All files">
+    <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1" elements="16" coveredelements="16" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
+    <file name="index.js" path="C:\Users\admin\Desktop\FES Advanced Challenges\questions\binarySearch\index.js">
+      <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="28" count="4" type="stmt"/>
+      <line num="29" count="4" type="stmt"/>
+      <line num="30" count="4" type="stmt"/>
+      <line num="31" count="9" type="stmt"/>
+      <line num="32" count="9" type="cond" truecount="2" falsecount="0"/>
+      <line num="33" count="3" type="stmt"/>
+      <line num="34" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="35" count="2" type="stmt"/>
+      <line num="37" count="4" type="stmt"/>
+      <line num="42" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

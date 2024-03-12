@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for index.js</title>
+    <title>Code coverage report for twoSortedSum/index.js</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="prettify.css" />
-    <link rel="stylesheet" href="base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(sort-arrow-sprite.png);
+            background-image: url(../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> index.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">twoSortedSum</a> index.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -94,18 +94,7 @@
 <a name='L29'></a><a href='#L29'>29</a>
 <a name='L30'></a><a href='#L30'>30</a>
 <a name='L31'></a><a href='#L31'>31</a>
-<a name='L32'></a><a href='#L32'>32</a>
-<a name='L33'></a><a href='#L33'>33</a>
-<a name='L34'></a><a href='#L34'>34</a>
-<a name='L35'></a><a href='#L35'>35</a>
-<a name='L36'></a><a href='#L36'>36</a>
-<a name='L37'></a><a href='#L37'>37</a>
-<a name='L38'></a><a href='#L38'>38</a>
-<a name='L39'></a><a href='#L39'>39</a>
-<a name='L40'></a><a href='#L40'>40</a>
-<a name='L41'></a><a href='#L41'>41</a>
-<a name='L42'></a><a href='#L42'>42</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L32'></a><a href='#L32'>32</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -120,89 +109,70 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">/** Binary Search **
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/** Two Sorted Sum **
  * 
- * Given a sorted array 'nums' and an integer 'target', return
- * the index of the target. 
+ * Find two numbers in the given sorted array that add up to `target`
+ * and return the indices of those two numbers in the array. 
  * 
- * Note: Your solutions' time complexity must be faster than O(n). 
  * 
  * @example
- * binarySearch([1, 2, 4, 9, 12], 9) -&gt; 3
- * binarySearch([-2, -1, 4, 5, 7], -1) -&gt; 1
- * binarySearch([-1, 4, 18, 20], 18) -&gt; 2
+ * twoSum([1, 2, 4, 9], 13) -&gt; [2, 3]
+ * twoSum([10, 20], 30) -&gt; [0, 1]
+ * twoSum([2, 3, 4], 6) -&gt; [0, 2]
  * 
  */
 &nbsp;
-const binarySearch = (nums, target) =&gt; {
-    // tried on my own, without knowing the proper logic
-    // let middleElement = Math.floor(nums.length / 2)
-    // while () {
-    //     if (target &gt; nums[middleElement]) {
-    //         middleElement++
-    //     } else if (target &lt; nums[middleElement]) {
-    //         middleElement--
-    //     } else {
-    //         return middleElement;
-    //     }
-    // }
-&nbsp;
+const twoSortedSum = (nums, target) =&gt; {
+    // O(n) and O(1) space
     let leftPointer = 0;
     let rightPointer = nums.length - 1;
-    while (leftPointer != rightPointer) {
-        let middleNumber = Math.floor((leftPointer + rightPointer) / 2)
-        if (target &gt; nums[middleNumber]) {
-            leftPointer++
-        } else if (target &lt; nums[middleNumber]) {
-            rightPointer--
+&nbsp;
+    while (leftPointer &lt; rightPointer) {
+        const sum = nums[leftPointer] + nums[rightPointer]
+        if (sum &gt; target) {
+            rightPointer--;
+        } else if (sum &lt; target) {
+            leftPointer++;
         } else {
-            return middleNumber
+            return [leftPointer, rightPointer]
         }
     }
 }
 &nbsp;
-module.exports = binarySearch;</pre></td></tr></table></pre>
+module.exports = twoSortedSum;
+&nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Tue Mar 12 2024 19:29:37 GMT+0530 (India Standard Time)
+                at Tue Mar 12 2024 19:21:43 GMT+0530 (India Standard Time)
             </div>
-        <script src="prettify.js"></script>
+        <script src="../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="sorter.js"></script>
-        <script src="block-navigation.js"></script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
     </body>
 </html>
     
