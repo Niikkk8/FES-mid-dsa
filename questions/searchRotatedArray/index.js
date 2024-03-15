@@ -14,7 +14,31 @@
  */
 
 const search = (nums, target) => {
+    let leftPointer = 0;
+    let rightPointer = nums.length - 1;
+    while (leftPointer <= rightPointer) {
+        let middleNumber = Math.floor((leftPointer + rightPointer) / 2);
+        if (nums[middleNumber] === target) {
+            return middleNumber
+        }
+        if (nums[middleNumber] < nums[rightPointer]) {
+            if (target < nums[middleNumber] || target > nums[rightPointer]) {
+                rightPointer = middleNumber - 1;
+            } else {
+                leftPointer = middleNumber + 1;
+            }
+        } else {
+            if (target > nums[middleNumber] || target < nums[leftPointer]) {
+                leftPointer = middleNumber + 1;
+            } else {
+                rightPointer = middleNumber - 1;
+            }
+        }
+    }
+    return -1;
+};
 
-}
+module.exports = search;
+
 
 module.exports = search;

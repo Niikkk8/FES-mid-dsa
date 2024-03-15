@@ -13,7 +13,18 @@
  */
 
 const findMinimum = (nums) => {
-
+    // return (nums.sort((a,b) => a-b))[0];
+    let leftPointer = 0;
+    let rightPointer = nums.length - 1;
+    while (leftPointer < rightPointer) {
+        let middleNumber = Math.floor((leftPointer + rightPointer) / 2)
+        if (nums[middleNumber] > nums[rightPointer]) {
+            leftPointer = middleNumber + 1
+        } else {
+            rightPointer = middleNumber
+        }
+    }
+    return nums[leftPointer]
 }
 
 module.exports = findMinimum;

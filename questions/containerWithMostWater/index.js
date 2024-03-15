@@ -12,20 +12,20 @@
  */
 
  const maxWater = (heights) => {
-   let l = 0
-   let r = heights.length - 1
+   let leftPointer = 0
+   let rightPointer = heights.length - 1
    let maxArea = 0 
 
-   while (l < r){
-      let width = r - l
-      let height = Math.min(heights[l], heights[r])
+   while (leftPointer < rightPointer){
+      let width = rightPointer - leftPointer
+      let height = Math.min(heights[leftPointer], heights[rightPointer])
       let area = width * height
 
-      if (heights[l] < heights[r]){
-         l += 1
+      if (heights[leftPointer] < heights[rightPointer]){
+         leftPointer += 1
       }
       else{
-         r -= 1
+         rightPointer -= 1
       }
 
       if (area > maxArea){
