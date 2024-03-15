@@ -11,8 +11,19 @@
  * 
  */
 
- const moveZeroes = (nums) => {
-
+const moveZeroes = (nums) => {
+    let leftPointer = 0
+    let rightPointer = 0
+    while (rightPointer < nums.length) {
+        if (nums[rightPointer] !== 0) {
+            let temp = nums[rightPointer]
+            nums[rightPointer] = nums[leftPointer]
+            nums[leftPointer] = temp
+            leftPointer += 1
+        }
+        rightPointer++
+    }
+    return nums
 }
 
 module.exports = moveZeroes;
